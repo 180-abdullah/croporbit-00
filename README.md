@@ -48,7 +48,7 @@ python3 -m pytest -q tests
 ```
 
 ## Keeping the data fresh
-`.github/workflows/refresh.yml` runs every day. It asks the NASA POWER daily point API (no API key needed) only for the newest days, re-requesting the last 120 days because NASA revises its newest values, re-runs the analysis, rebuilds the site and publishes it to Netlify. If NASA cannot be reached or the data is stale, the job stops before publishing and the live site keeps the previous version. Setup (two secrets) is in [`docs/DEPLOY.md`](docs/DEPLOY.md). POWER publishes new days with a lag of a few days, so "newest day" means newest day NASA has released; the date is shown in the footer.
+`.github/workflows/refresh.yml` runs every day. It asks the NASA POWER daily point API (no API key needed) only for the newest days, re-requesting the last 120 days because NASA revises its newest values, re-runs the analysis, rebuilds the site and publishes it to GitHub Pages. If NASA cannot be reached or the data is stale, the job stops before publishing and the live site keeps the previous version. Setup (one setting) is in [`docs/DEPLOY.md`](docs/DEPLOY.md). POWER publishes new days with a lag of a few days, so "newest day" means newest day NASA has released; the date is shown in the footer.
 
 ## Sources and tools
 **NASA data**
@@ -64,12 +64,12 @@ python3 -m pytest -q tests
 - CesiumJS (Apache-2.0) for the 3D globe.
 - Python: numpy, scipy, pandas, shapely, pytest for the analysis and tests.
 - Fonts: Anek Bangla, Newsreader, Noto Serif Bengali (SIL OFL) via Fontsource.
-- Hosting and automation: Netlify (static hosting) and GitHub Actions.
+- Hosting and automation: GitHub Pages and GitHub Actions.
 
 **AI assistance:** Claude (Anthropic); see [`docs/AI_USE.md`](docs/AI_USE.md). Text for the Space Apps submission form is in [`docs/SUBMISSION.md`](docs/SUBMISSION.md).
 
 ## Deploy free
-Step-by-step guide: [`docs/DEPLOY.md`](docs/DEPLOY.md). The main route is Netlify with the daily refresh job; GitHub Pages is an optional manual extra.
+Step-by-step guide: [`docs/DEPLOY.md`](docs/DEPLOY.md). The site is published by GitHub Pages through the daily refresh job.
 
 ## License and AI use
 Code: Apache-2.0 (`LICENSE`). AI assistance is disclosed in [`docs/AI_USE.md`](docs/AI_USE.md). Bangla text should be proofread by a native speaker before wider release.

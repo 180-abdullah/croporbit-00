@@ -6,7 +6,7 @@ Paste into the matching fields. The form must be in English. Check every claim a
 
 **Project name:** CropOrbit
 
-**Links:** final project: your Netlify link. Code: your public GitHub repository link.
+**Links:** final project: your GitHub Pages link (https://<username>.github.io/<repo>/). Code: your public GitHub repository link.
 
 **High-level project summary (short):**
 CropOrbit tells farmers and agriculture officers in Bangladesh whether the planting season is moving in their district. For each of the 64 districts it reads the NASA POWER climate record (1981 to the newest published day), tests whether rain timing for Aus and Aman rice has shifted, and says plainly when nothing reliable has changed. It refreshes from NASA every day and also shows the last 30 days live from NASA when a district page is opened.
@@ -32,7 +32,7 @@ Limits: POWER is model output (MERRA-2, about 50 km cells), not station data. No
 **Space Agency partner and other data, tools, and resources:**
 - Data: geoBoundaries gbOpen ADM3 (CC BY 4.0) via the bangladesh-geojson package (district boundaries); Natural Earth II imagery bundled with CesiumJS.
 - Software: Next.js, React, TypeScript, Tailwind CSS, Recharts, Zustand, CesiumJS, Vitest, ESLint; Python with numpy, scipy, pandas, shapely, pytest; fonts Anek Bangla, Newsreader, Noto Serif Bengali via Fontsource.
-- Hosting and automation: Netlify, GitHub Actions.
+- Hosting and automation: GitHub Pages, GitHub Actions.
 - Licence: code under Apache-2.0.
 
 **AI use disclosure:**

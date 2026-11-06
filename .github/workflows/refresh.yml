@@ -1,25 +1,30 @@
 name: Daily NASA data refresh
 # Every day this job asks NASA POWER (https://power.larc.nasa.gov, no API key needed) only for the newest days,
-# re-runs the analysis, rebuilds the site and publishes it to Netlify. If NASA cannot be reached or the data is stale,
-# the job fails BEFORE publishing, so the live site keeps yesterday's version.
-# Setup: add the repository secrets NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID (see docs/DEPLOY.md, "Daily refresh").
-# Without them the job still runs and attaches the rebuilt site as a downloadable file ("site") on the run page.
+# re-runs the analysis, rebuilds the site and publishes it to GitHub Pages. If NASA cannot be reached or the data is
+# stale, the job fails BEFORE publishing, so the live site keeps yesterday's version.
+# One-time setup: Settings > Pages > Source: GitHub Actions (on a free plan the repository must be public).
+# Run it by hand: Actions > Daily NASA data refresh > Run workflow. Tick "saved data" to publish without asking NASA,
+# for example to test the Pages setup or if NASA is down.
 on:
   schedule:
     - cron: "30 20 * * *" # 02:30 in Bangladesh (UTC+6)
   workflow_dispatch:
+    inputs:
+      saved_data:
+        description: "Use the data saved in the repository (do not ask NASA)"
+        type: boolean
+        default: false
 permissions:
   contents: read
+  pages: write
+  id-token: write
 concurrency:
-  group: refresh
+  group: pages
   cancel-in-progress: false
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    env:
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,14 +33,17 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Restore the NASA data kept from the previous run (the repository does not store it)
+        if: ${{ inputs.saved_data != true }}
         uses: actions/cache@v4
         with:
           path: data/raw/power
           key: power-raw-${{ github.run_id }}
           restore-keys: power-raw-
       - name: Ask NASA POWER for the newest days
+        if: ${{ inputs.saved_data != true }}
         run: python3 -I scripts/data/fetch_power.py --update data/districts.json data/raw/power data/geo data/metadata
       - name: Re-run the climate analysis
+        if: ${{ inputs.saved_data != true }}
         run: python3 -I scripts/compute/analyze.py data/districts.json data/geo/district-cells.json data/raw/power public/data/climate data/metadata
       - name: Python tests
         run: python3 -m pytest -q tests
@@ -45,12 +53,20 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      - name: Set base path (empty for a <user>.github.io repo, /<repo> otherwise)
+        run: |
+          name="${{ github.event.repository.name }}"
+          if [[ "$name" == *.github.io ]]; then echo "NEXT_PUBLIC_BASE_PATH=" >> "$GITHUB_ENV"; else echo "NEXT_PUBLIC_BASE_PATH=/$name" >> "$GITHUB_ENV"; fi
       - run: npm run build
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          name: site
           path: out
-          retention-days: 7
-      - name: Publish to Netlify
-        if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
-        run: npx --yes netlify-cli deploy --dir=out --prod --auth "$NETLIFY_AUTH_TOKEN" --site "$NETLIFY_SITE_ID" --message "Daily NASA refresh $(date -u +%F)"
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

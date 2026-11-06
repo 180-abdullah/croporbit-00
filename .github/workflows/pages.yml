@@ -1,6 +1,7 @@
 name: Deploy to GitHub Pages (optional, manual)
-# Manual only. The live site is refreshed and published daily by refresh.yml. Run this by hand if you also want a GitHub Pages copy
-# (Settings > Pages > Source must be GitHub Actions).
+# Spare, manual only, not needed normally. The site is refreshed and published daily by refresh.yml (it can also be run by hand
+# with the "saved data" box ticked). This one publishes only the data saved in the repository.
+# Settings > Pages > Source must be GitHub Actions.
 on:
   workflow_dispatch:
 permissions:
