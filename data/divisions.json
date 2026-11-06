@@ -1,0 +1,66 @@
+[
+ {
+  "id": "1",
+  "slug": "barishal",
+  "name_en": "Barishal",
+  "name_bn": "বরিশাল",
+  "lat": 22.4361,
+  "lon": 90.4061
+ },
+ {
+  "id": "2",
+  "slug": "chattogram",
+  "name_en": "Chattogram",
+  "name_bn": "চট্টগ্রাম",
+  "lat": 22.5056,
+  "lon": 92.1207
+ },
+ {
+  "id": "3",
+  "slug": "dhaka",
+  "name_en": "Dhaka",
+  "name_bn": "ঢাকা",
+  "lat": 23.8238,
+  "lon": 90.2379
+ },
+ {
+  "id": "4",
+  "slug": "khulna",
+  "name_en": "Khulna",
+  "name_bn": "খুলনা",
+  "lat": 22.9567,
+  "lon": 89.3318
+ },
+ {
+  "id": "8",
+  "slug": "mymensingh",
+  "name_en": "Mymensingh",
+  "name_bn": "ময়মনসিংহ",
+  "lat": 24.8392,
+  "lon": 90.4029
+ },
+ {
+  "id": "5",
+  "slug": "rajshahi",
+  "name_en": "Rajshahi",
+  "name_bn": "রাজশাহী",
+  "lat": 24.5507,
+  "lon": 88.9372
+ },
+ {
+  "id": "6",
+  "slug": "rangpur",
+  "name_en": "Rangpur",
+  "name_bn": "রংপুর",
+  "lat": 25.8338,
+  "lon": 88.9672
+ },
+ {
+  "id": "7",
+  "slug": "sylhet",
+  "name_en": "Sylhet",
+  "name_bn": "সিলেট",
+  "lat": 24.5917,
+  "lon": 91.7176
+ }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "CropOrbit",
+  "short_name": "CropOrbit",
+  "description": "District climate and planting signals from NASA data",
+  "start_url": "./bn/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f5f2",
+  "theme_color": "#2e6f57",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

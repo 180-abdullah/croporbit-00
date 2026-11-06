@@ -1,0 +1,22 @@
+{
+ "cells": 45,
+ "method": "mean across cells of era means: 1998-2003 vs 1991-1996 (break A), 2017-2025 vs 2008-2015 (break B)",
+ "changes": {
+  "rain_ratio_97": 2.014,
+  "rain_ratio_16": 1.613,
+  "dT_97": -1.028,
+  "dTmax_97": -1.818,
+  "dT_16": -0.147,
+  "soil_97": 0.158,
+  "soil_16": 0.087,
+  "solar_97": -0.681,
+  "rh_97": 10.504,
+  "rh_16": 3.885
+ },
+ "scale_free_onset_median_doy_by_era": {
+  "81-96": 124,
+  "98-15": 127,
+  "16-25": 127
+ },
+ "conclusion": "Amounts of rain, soil wetness, humidity and solar change in steps at ~1997/98 and ~2016; temperature steps at 1997/98. Cause not confirmed."
+}

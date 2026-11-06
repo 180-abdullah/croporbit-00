@@ -1,0 +1,405 @@
+{
+ "grid": "MERRA-2 0.5 x 0.625 deg",
+ "cells": {
+  "+22.500_+090.000": {
+   "lat": 22.5,
+   "lon": 90.0,
+   "districts": [
+    "bagerhat",
+    "jhalokati",
+    "pirojpur"
+   ]
+  },
+  "+22.000_+092.500": {
+   "lat": 22.0,
+   "lon": 92.5,
+   "districts": [
+    "bandarban"
+   ]
+  },
+  "+22.000_+090.000": {
+   "lat": 22.0,
+   "lon": 90.0,
+   "districts": [
+    "barguna"
+   ]
+  },
+  "+23.000_+090.625": {
+   "lat": 23.0,
+   "lon": 90.625,
+   "districts": [
+    "barishal",
+    "lakshmipur",
+    "shariatpur"
+   ]
+  },
+  "+22.500_+090.625": {
+   "lat": 22.5,
+   "lon": 90.625,
+   "districts": [
+    "bhola"
+   ]
+  },
+  "+25.000_+089.375": {
+   "lat": 25.0,
+   "lon": 89.375,
+   "districts": [
+    "bogura",
+    "joypurhat"
+   ]
+  },
+  "+24.000_+091.250": {
+   "lat": 24.0,
+   "lon": 91.25,
+   "districts": [
+    "brahmanbaria"
+   ]
+  },
+  "+23.500_+090.625": {
+   "lat": 23.5,
+   "lon": 90.625,
+   "districts": [
+    "chandpur",
+    "munshiganj",
+    "narayanganj"
+   ]
+  },
+  "+22.500_+091.875": {
+   "lat": 22.5,
+   "lon": 91.875,
+   "districts": [
+    "chattogram"
+   ]
+  },
+  "+23.500_+088.750": {
+   "lat": 23.5,
+   "lon": 88.75,
+   "districts": [
+    "chuadanga"
+   ]
+  },
+  "+21.500_+091.875": {
+   "lat": 21.5,
+   "lon": 91.875,
+   "districts": [
+    "coxs-bazar"
+   ]
+  },
+  "+23.500_+091.250": {
+   "lat": 23.5,
+   "lon": 91.25,
+   "districts": [
+    "cumilla"
+   ]
+  },
+  "+23.500_+090.000": {
+   "lat": 23.5,
+   "lon": 90.0,
+   "districts": [
+    "dhaka",
+    "faridpur"
+   ]
+  },
+  "+25.500_+088.750": {
+   "lat": 25.5,
+   "lon": 88.75,
+   "districts": [
+    "dinajpur"
+   ]
+  },
+  "+23.000_+091.250": {
+   "lat": 23.0,
+   "lon": 91.25,
+   "districts": [
+    "feni"
+   ]
+  },
+  "+25.500_+089.375": {
+   "lat": 25.5,
+   "lon": 89.375,
+   "districts": [
+    "gaibandha",
+    "rangpur"
+   ]
+  },
+  "+24.000_+090.000": {
+   "lat": 24.0,
+   "lon": 90.0,
+   "districts": [
+    "gazipur",
+    "manikganj"
+   ]
+  },
+  "+23.000_+090.000": {
+   "lat": 23.0,
+   "lon": 90.0,
+   "districts": [
+    "gopalganj",
+    "madaripur"
+   ]
+  },
+  "+24.500_+091.250": {
+   "lat": 24.5,
+   "lon": 91.25,
+   "districts": [
+    "habiganj",
+    "kishoreganj"
+   ]
+  },
+  "+25.000_+090.000": {
+   "lat": 25.0,
+   "lon": 90.0,
+   "districts": [
+    "jamalpur",
+    "sherpur"
+   ]
+  },
+  "+23.000_+089.375": {
+   "lat": 23.0,
+   "lon": 89.375,
+   "districts": [
+    "jashore",
+    "narail"
+   ]
+  },
+  "+23.500_+089.375": {
+   "lat": 23.5,
+   "lon": 89.375,
+   "districts": [
+    "jhenaidah",
+    "magura",
+    "rajbari"
+   ]
+  },
+  "+23.000_+091.875": {
+   "lat": 23.0,
+   "lon": 91.875,
+   "districts": [
+    "khagrachari"
+   ]
+  },
+  "+22.500_+089.375": {
+   "lat": 22.5,
+   "lon": 89.375,
+   "districts": [
+    "khulna",
+    "satkhira"
+   ]
+  },
+  "+26.000_+090.000": {
+   "lat": 26.0,
+   "lon": 90.0,
+   "districts": [
+    "kurigram"
+   ]
+  },
+  "+24.000_+088.750": {
+   "lat": 24.0,
+   "lon": 88.75,
+   "districts": [
+    "kushtia",
+    "meherpur"
+   ]
+  },
+  "+26.000_+089.375": {
+   "lat": 26.0,
+   "lon": 89.375,
+   "districts": [
+    "lalmonirhat"
+   ]
+  },
+  "+24.500_+091.875": {
+   "lat": 24.5,
+   "lon": 91.875,
+   "districts": [
+    "maulvibazar"
+   ]
+  },
+  "+24.500_+090.625": {
+   "lat": 24.5,
+   "lon": 90.625,
+   "districts": [
+    "mymensingh"
+   ]
+  },
+  "+25.000_+088.750": {
+   "lat": 25.0,
+   "lon": 88.75,
+   "districts": [
+    "naogaon"
+   ]
+  },
+  "+24.000_+090.625": {
+   "lat": 24.0,
+   "lon": 90.625,
+   "districts": [
+    "narsingdi"
+   ]
+  },
+  "+24.500_+089.375": {
+   "lat": 24.5,
+   "lon": 89.375,
+   "districts": [
+    "natore",
+    "sirajgonj"
+   ]
+  },
+  "+24.500_+088.125": {
+   "lat": 24.5,
+   "lon": 88.125,
+   "districts": [
+    "nawabganj"
+   ]
+  },
+  "+25.000_+090.625": {
+   "lat": 25.0,
+   "lon": 90.625,
+   "districts": [
+    "netrokona"
+   ]
+  },
+  "+26.000_+088.750": {
+   "lat": 26.0,
+   "lon": 88.75,
+   "districts": [
+    "nilphamari"
+   ]
+  },
+  "+22.500_+091.250": {
+   "lat": 22.5,
+   "lon": 91.25,
+   "districts": [
+    "noakhali"
+   ]
+  },
+  "+24.000_+089.375": {
+   "lat": 24.0,
+   "lon": 89.375,
+   "districts": [
+    "pabna"
+   ]
+  },
+  "+26.500_+088.750": {
+   "lat": 26.5,
+   "lon": 88.75,
+   "districts": [
+    "panchagarh"
+   ]
+  },
+  "+22.000_+090.625": {
+   "lat": 22.0,
+   "lon": 90.625,
+   "districts": [
+    "patuakhali"
+   ]
+  },
+  "+24.500_+088.750": {
+   "lat": 24.5,
+   "lon": 88.75,
+   "districts": [
+    "rajshahi"
+   ]
+  },
+  "+23.000_+092.500": {
+   "lat": 23.0,
+   "lon": 92.5,
+   "districts": [
+    "rangamati"
+   ]
+  },
+  "+25.000_+091.250": {
+   "lat": 25.0,
+   "lon": 91.25,
+   "districts": [
+    "sunamganj"
+   ]
+  },
+  "+25.000_+091.875": {
+   "lat": 25.0,
+   "lon": 91.875,
+   "districts": [
+    "sylhet"
+   ]
+  },
+  "+24.500_+090.000": {
+   "lat": 24.5,
+   "lon": 90.0,
+   "districts": [
+    "tangail"
+   ]
+  },
+  "+26.000_+088.125": {
+   "lat": 26.0,
+   "lon": 88.125,
+   "districts": [
+    "thakurgaon"
+   ]
+  }
+ },
+ "district_to_cell": {
+  "bagerhat": "+22.500_+090.000",
+  "bandarban": "+22.000_+092.500",
+  "barguna": "+22.000_+090.000",
+  "barishal": "+23.000_+090.625",
+  "bhola": "+22.500_+090.625",
+  "bogura": "+25.000_+089.375",
+  "brahmanbaria": "+24.000_+091.250",
+  "chandpur": "+23.500_+090.625",
+  "chattogram": "+22.500_+091.875",
+  "chuadanga": "+23.500_+088.750",
+  "coxs-bazar": "+21.500_+091.875",
+  "cumilla": "+23.500_+091.250",
+  "dhaka": "+23.500_+090.000",
+  "dinajpur": "+25.500_+088.750",
+  "faridpur": "+23.500_+090.000",
+  "feni": "+23.000_+091.250",
+  "gaibandha": "+25.500_+089.375",
+  "gazipur": "+24.000_+090.000",
+  "gopalganj": "+23.000_+090.000",
+  "habiganj": "+24.500_+091.250",
+  "jamalpur": "+25.000_+090.000",
+  "jashore": "+23.000_+089.375",
+  "jhalokati": "+22.500_+090.000",
+  "jhenaidah": "+23.500_+089.375",
+  "joypurhat": "+25.000_+089.375",
+  "khagrachari": "+23.000_+091.875",
+  "khulna": "+22.500_+089.375",
+  "kishoreganj": "+24.500_+091.250",
+  "kurigram": "+26.000_+090.000",
+  "kushtia": "+24.000_+088.750",
+  "lakshmipur": "+23.000_+090.625",
+  "lalmonirhat": "+26.000_+089.375",
+  "madaripur": "+23.000_+090.000",
+  "magura": "+23.500_+089.375",
+  "manikganj": "+24.000_+090.000",
+  "maulvibazar": "+24.500_+091.875",
+  "meherpur": "+24.000_+088.750",
+  "munshiganj": "+23.500_+090.625",
+  "mymensingh": "+24.500_+090.625",
+  "naogaon": "+25.000_+088.750",
+  "narail": "+23.000_+089.375",
+  "narayanganj": "+23.500_+090.625",
+  "narsingdi": "+24.000_+090.625",
+  "natore": "+24.500_+089.375",
+  "nawabganj": "+24.500_+088.125",
+  "netrokona": "+25.000_+090.625",
+  "nilphamari": "+26.000_+088.750",
+  "noakhali": "+22.500_+091.250",
+  "pabna": "+24.000_+089.375",
+  "panchagarh": "+26.500_+088.750",
+  "patuakhali": "+22.000_+090.625",
+  "pirojpur": "+22.500_+090.000",
+  "rajbari": "+23.500_+089.375",
+  "rajshahi": "+24.500_+088.750",
+  "rangamati": "+23.000_+092.500",
+  "rangpur": "+25.500_+089.375",
+  "satkhira": "+22.500_+089.375",
+  "shariatpur": "+23.000_+090.625",
+  "sherpur": "+25.000_+090.000",
+  "sirajgonj": "+24.500_+089.375",
+  "sunamganj": "+25.000_+091.250",
+  "sylhet": "+25.000_+091.875",
+  "tangail": "+24.500_+090.000",
+  "thakurgaon": "+26.000_+088.125"
+ }
+}

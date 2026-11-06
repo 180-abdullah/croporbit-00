@@ -1,0 +1,1370 @@
+{
+ "dataset": "NASA POWER daily point, community=AG",
+ "url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+ "retrieved": "2026-11-04",
+ "request_start": "19810101",
+ "request_end": "20261104",
+ "parameters": [
+  "PRECTOTCORR",
+  "T2M",
+  "T2M_MAX",
+  "T2M_MIN",
+  "RH2M",
+  "WS2M",
+  "ALLSKY_SFC_SW_DWN",
+  "GWETTOP",
+  "GWETROOT"
+ ],
+ "cells": [
+  {
+   "cell": "+21.500_+091.875",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.000_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.000_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.000_+092.500",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.500_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.500_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.500_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.500_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+22.500_+091.875",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+091.875",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.000_+092.500",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.500_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.500_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.500_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.500_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+23.500_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.000_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.000_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.000_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.000_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.000_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+088.125",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+24.500_+091.875",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+090.625",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+091.250",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.000_+091.875",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.500_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+25.500_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+26.000_+088.125",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+26.000_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+26.000_+089.375",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+26.000_+090.000",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  },
+  {
+   "cell": "+26.500_+088.750",
+   "first_day": "19810101",
+   "last_day": "20261104",
+   "n_days": 16744,
+   "missing_days_by_parameter": {
+    "PRECTOTCORR": 3,
+    "T2M": 3,
+    "T2M_MAX": 3,
+    "T2M_MIN": 3,
+    "RH2M": 3,
+    "WS2M": 3,
+    "ALLSKY_SFC_SW_DWN": 1100,
+    "GWETTOP": 3,
+    "GWETROOT": 3
+   },
+   "api": {
+    "version": "v2.10.2",
+    "name": "POWER Daily API"
+   },
+   "sources": [
+    "MERRA2",
+    "GEOSIT",
+    "SRB",
+    "SYN1DEG",
+    "FLASHFLUX",
+    "POWER"
+   ],
+   "fill_value": -999.0
+  }
+ ]
+}

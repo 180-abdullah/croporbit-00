@@ -1,0 +1,56 @@
+name: Daily NASA data refresh
+# Every day this job asks NASA POWER (https://power.larc.nasa.gov, no API key needed) only for the newest days,
+# re-runs the analysis, rebuilds the site and publishes it to Netlify. If NASA cannot be reached or the data is stale,
+# the job fails BEFORE publishing, so the live site keeps yesterday's version.
+# Setup: add the repository secrets NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID (see docs/DEPLOY.md, "Daily refresh").
+# Without them the job still runs and attaches the rebuilt site as a downloadable file ("site") on the run page.
+on:
+  schedule:
+    - cron: "30 20 * * *" # 02:30 in Bangladesh (UTC+6)
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Restore the NASA data kept from the previous run (the repository does not store it)
+        uses: actions/cache@v4
+        with:
+          path: data/raw/power
+          key: power-raw-${{ github.run_id }}
+          restore-keys: power-raw-
+      - name: Ask NASA POWER for the newest days
+        run: python3 -I scripts/data/fetch_power.py --update data/districts.json data/raw/power data/geo data/metadata
+      - name: Re-run the climate analysis
+        run: python3 -I scripts/compute/analyze.py data/districts.json data/geo/district-cells.json data/raw/power public/data/climate data/metadata
+      - name: Python tests
+        run: python3 -m pytest -q tests
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: out
+          retention-days: 7
+      - name: Publish to Netlify
+        if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
+        run: npx --yes netlify-cli deploy --dir=out --prod --auth "$NETLIFY_AUTH_TOKEN" --site "$NETLIFY_SITE_ID" --message "Daily NASA refresh $(date -u +%F)"

@@ -1,0 +1,11 @@
+public/cesium/
+node_modules/
+.next/
+out/
+.env*.local
+__pycache__/
+*.pyc
+*.tsbuildinfo
+.pytest_cache/
+.DS_Store
+data/raw/power/

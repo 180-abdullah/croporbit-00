@@ -1,0 +1,382 @@
+{
+ "app": "CropOrbit",
+ "tagline": "District climate and planting signals from NASA data",
+ "nav": {
+  "about": "Method and data"
+ },
+ "lang": {
+  "switch": "বাংলা"
+ },
+ "footer": {
+  "data": "Data up to {to}. Site last built {built}.",
+  "note": "Demo build for the NASA Space Apps Challenge 2026 (Field Shift). Weather values are NASA POWER model output (MERRA-2, about 50 km grid), not station readings. Advice is a signal to check with your local agriculture officer, not a prescription."
+ },
+ "badge": {
+  "nasa": "NASA model-derived",
+  "analysis": "Analysis",
+  "simulated": "Simulated data",
+  "unavailable": "Unavailable",
+  "demo": "Demo",
+  "sample": "Sample data"
+ },
+ "crops": {
+  "aus": "Aus",
+  "aman": "Aman",
+  "boro": "Boro",
+  "season": {
+   "aus": "Mar to Jul",
+   "aman": "Jul to Nov",
+   "boro": "Jan to May"
+  }
+ },
+ "signal": {
+  "aus": "the date 10% of March–September rain has fallen",
+  "aman": "the date 40% of March–September rain has fallen"
+ },
+ "advice": {
+  "earlier": "In {district}, the rain pattern for {crop} has moved about {n} days earlier than in {a} ({signal}). Consider checking whether seedbeds and transplanting can move earlier, and confirm with your local agriculture officer.",
+  "later": "In {district}, the rain pattern for {crop} has moved about {n} days later than in {a} ({signal}). Consider checking whether seedbeds and transplanting can move later, and confirm with your local agriculture officer.",
+  "none": "For {crop} in {district}, we found no reliable shift in rain timing since {a}. Keep your usual planting calendar.",
+  "boro-warmer": "Winter nights in {district} have warmed by about {x} °C per decade since 1998. Boro seedlings may face less cold stress, but keep your usual calendar until your agriculture officer confirms.",
+  "boro-cooler": "Winter nights in {district} have cooled by about {x} °C per decade since 1998. Watch for cold stress on Boro seedlings and confirm timing with your agriculture officer.",
+  "boro-none": "For Boro in {district}, winter night temperatures show no reliable trend. Keep your usual planting calendar.",
+  "sms": {
+   "earlier": "{district}: {crop} rain has moved ~{n} days earlier. Check with the agri office.",
+   "later": "{district}: {crop} rain has moved ~{n} days later. Check with the agri office.",
+   "none": "{district}: no reliable change in {crop} rain timing. Keep your usual calendar.",
+   "boro": "{district}: Boro winter-night trend checked. See CropOrbit for details."
+  }
+ },
+ "home": {
+  "title": "Is your district's planting season moving?",
+  "lead": "Choose a district. CropOrbit reads the NASA climate record for that place and tells you plainly whether rain timing has shifted, or whether nothing reliable has changed.",
+  "search": "Find a district",
+  "searchPlaceholder": "Type a district name",
+  "noResult": "No district matches that name. Check the spelling or pick a division.",
+  "all": "All divisions",
+  "globeHint": "Drag to turn the globe. Select a district to open it.",
+  "globeLoading": "Loading globe…",
+  "globeFail": "The 3D globe could not start on this device. Use the district list instead.",
+  "satellite": "NASA satellite imagery (Blue Marble)",
+  "satelliteHint": "Needs internet. The demo works offline without it.",
+  "districts": "Districts",
+  "dataline": "Data: NASA POWER daily record, 1981 to {to}, {cells} grid cells covering {districts} districts."
+ },
+ "area": {
+  "live": {
+   "title": "Live from NASA POWER",
+   "loading": "Checking NASA for the newest days…",
+   "sub": "Asked NASA just now for this district's grid cell. Newest day with data: {d}.",
+   "rain7": "Rain, last 7 days",
+   "rain30": "Rain, last 30 days",
+   "normal": "Usual for this time of year: {x}",
+   "fail": "NASA could not be reached from this device, so the figures on this page come from the last saved update (data up to {d}).",
+   "note": "Model data. The newest days are provisional and can change slightly when NASA revises them."
+  },
+  "back": "All districts",
+  "division": "{name} division",
+  "advisory": "Planting signal",
+  "openWindow": "See the evidence",
+  "rain30": "Rain, last 30 days",
+  "rain30sub": "Typical for these dates: {x} mm",
+  "tempTrend": "Average temperature",
+  "tempTrendSub": "Change per decade since 1998",
+  "hotDays": "Days at 35 °C or above",
+  "hotDaysSub": "Change per decade since 1998. The model runs warm, so read the change, not the count.",
+  "coldNights": "Winter night temperature",
+  "coldNightsSub": "Change per decade since 1998, December to February",
+  "perDecade": "{x} per decade",
+  "recentRain": "Daily rain, last 45 days",
+  "recentRainSub": "Latest NASA data day: {d}",
+  "context": "This is a NASA regional reading for a grid cell about 50 km wide. It describes the surrounding area, not your field. Soil, water and local weather can differ.",
+  "explore": "Explore this district",
+  "status": {
+   "earlier": "{n} days earlier",
+   "later": "{n} days later",
+   "none": "No reliable shift",
+   "warmer": "Warmer nights",
+   "cooler": "Cooler nights"
+  },
+  "noReliable": "Not reliable (p = {p})",
+  "reliable": "Reliable (p = {p})",
+  "hotDaysValue": "{x} days"
+ },
+ "tools": {
+  "window": {
+   "title": "Planting window",
+   "desc": "Has rain timing shifted for Aus, Aman or Boro?"
+  },
+  "env": {
+   "title": "Environmental analysis",
+   "desc": "Rain, temperature, soil wetness and more, year by year."
+  },
+  "field": {
+   "title": "Field control",
+   "desc": "Try irrigation decisions on a simulated field."
+  },
+  "hist": {
+   "title": "Historical crops",
+   "desc": "Past yields and area by district."
+  },
+  "forecast": {
+   "title": "Crop forecast",
+   "desc": "Expected yield for the coming season."
+  }
+ },
+ "window": {
+  "title": "Planting window",
+  "lead": "We compare two periods of the NASA record and report a shift only when the difference is clear and holds under different settings.",
+  "definition": "Signal used: {signal}, counted from 1 March to 30 September.",
+  "chartTitle": "Signal date by year",
+  "dayOfYear": "Day of year",
+  "periodA": "{a}",
+  "periodB": "{b}",
+  "median": "Median date",
+  "shift": "Shift",
+  "days": "{n} days",
+  "p": "Chance this is luck (p)",
+  "evidence": "How we checked",
+  "long": "Longer record {a} vs {b}",
+  "lower": "Stricter setting ({f}%)",
+  "upper": "Looser setting ({f}%)",
+  "agree": "Direction agrees in every check",
+  "disagree": "Direction changes between checks",
+  "yes": "Yes",
+  "no": "No",
+  "sms": "Message for a phone (Bangla SMS)",
+  "smsCount": "{n} of 70 characters",
+  "smsLong": "Longer than one message; it will be split.",
+  "caveatTitle": "Read this before relying on it",
+  "caveat": "We test 64 districts at once. By chance alone, about 6 would look significant. Across Bangladesh we found {k} flagged for Aman and {j} for Aus, which is close to what chance produces. Treat a flag as a reason to ask, never as a rule.",
+  "noEvent": "Years without a clear signal: {y}",
+  "boroLead": "Boro grows through winter, so rain timing is not the useful signal. We track winter night temperature and heat accumulation instead.",
+  "gdd": "Heat accumulated in the season (growing degree days, base 10 °C)",
+  "gddChange": "Change between periods",
+  "gddTrend": "Trend per decade",
+  "coldNights": "Winter night temperature (December to February)",
+  "thin": "Significant means p below 0.10 and a shift of at least 2 days."
+ },
+ "env": {
+  "title": "Environmental analysis",
+  "lead": "Yearly values from the NASA record for this district's grid cell.",
+  "pick": "Choose a measure",
+  "series": {
+   "rain_total": "Yearly rain",
+   "rain_monsoon": "Monsoon rain (Jun to Sep)",
+   "t_mean": "Average temperature",
+   "t_max": "Daytime maximum",
+   "hot_days": "Days at 35 °C or above",
+   "soil_root": "Root-zone soil wetness",
+   "solar": "Sunlight",
+   "humidity": "Humidity",
+   "wind": "Wind speed"
+  },
+  "unit": {
+   "rain_total": "mm",
+   "rain_monsoon": "mm",
+   "t_mean": "°C",
+   "t_max": "°C",
+   "hot_days": "days",
+   "soil_root": "fraction",
+   "solar": "MJ/m²/day",
+   "humidity": "%",
+   "wind": "m/s"
+  },
+  "breakNote": "The NASA model changed its inputs around 1998 and 2016, which moves rain, soil wetness, humidity and sunlight levels in steps. Those values are not comparable across the shaded years or the break lines. Temperature is shown from 1998 only.",
+  "trend": "Trend since 1998: {x} {u} per decade (p = {p})",
+  "noTrend": "No trend is drawn for this measure because the steps above would create a false one.",
+  "monthly": "Typical month",
+  "monthlyNote": "Rain and soil: median of {r1}–{r2}. Temperature: {t1}–{t2}.",
+  "rain": "Rain (mm)",
+  "temp": "Temperature (°C)",
+  "month": "Month",
+  "months": [
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul",
+   "Aug",
+   "Sep",
+   "Oct",
+   "Nov",
+   "Dec"
+  ],
+  "year": "Year",
+  "missing": "no data"
+ },
+ "field": {
+  "title": "Field control",
+  "banner": "Simulation mode. No pump, valve or sensor is connected. Every number on this page is simulated or typed by you.",
+  "crop": "Crop profile",
+  "moisture": "Soil moisture (%)",
+  "tank": "Water tank (%)",
+  "runtime": "Pump runtime today (minutes)",
+  "rain": "Rain expected next 24 h (mm)",
+  "sensor": "Sensor",
+  "sensorOk": "Working",
+  "sensorFault": "Fault",
+  "pump": "Simulated pump",
+  "pumpOn": "Running",
+  "pumpOff": "Stopped",
+  "decision": "Recommendation",
+  "advance": "Advance one hour",
+  "reset": "Reset",
+  "scenarios": "Try a scenario",
+  "sc": {
+   "dry": "Dry field",
+   "wet": "Wet field",
+   "lowTank": "Low tank",
+   "fault": "Sensor fault",
+   "rain": "Rain coming",
+   "limit": "Runtime limit"
+  },
+  "log": "Event log",
+  "logEmpty": "Nothing yet. Advance the clock or try a scenario.",
+  "invalid": "Enter a number between 0 and 100.",
+  "limits": "Start below {low}%, stop at {target}%, at most {max} min a day, tank at least {tank}%.",
+  "fert": {
+   "title": "Fertigation plan",
+   "note": "Demonstration only. Approving writes a line in the log and doses nothing.",
+   "approve": "Approve demonstration",
+   "approved": "Fertigation step approved (demonstration, no dosing)."
+  },
+  "nasa": {
+   "title": "NASA regional context",
+   "body": "Last 7 days of rain in the surrounding grid cell: {a} mm. Typical for these dates: {b} mm. This is shown for context and never feeds the simulation."
+  },
+  "ev": {
+   "advance": "Clock advanced one hour: moisture {m}%, tank {t}%",
+   "scenario": "Scenario loaded: {s}",
+   "decision": "Recommendation changed to: {d}",
+   "pump": "Simulated pump {s}",
+   "reset": "Simulation reset"
+  },
+  "d": {
+   "BLOCKED_SENSOR_FAULT": {
+    "title": "Blocked: sensor fault",
+    "why": "The soil moisture reading is missing or impossible, so no decision is safe. Check the sensor."
+   },
+   "BLOCKED_LOW_TANK": {
+    "title": "Blocked: tank too low",
+    "why": "The tank is below the safe level. Refill before irrigating."
+   },
+   "STOPPED_RUNTIME_LIMIT": {
+    "title": "Stopped: daily runtime limit",
+    "why": "The pump has reached today's maximum runtime. Resume tomorrow."
+   },
+   "DELAYED_RAIN": {
+    "title": "Delayed: rain expected",
+    "why": "Enough rain is forecast to reach the target. Wait and re-check."
+   },
+   "NOT_NEEDED_TARGET_REACHED": {
+    "title": "Not needed: target reached",
+    "why": "Soil moisture is at or above the target for this crop."
+   },
+   "IRRIGATION_RECOMMENDED": {
+    "title": "Irrigation recommended",
+    "why": "Soil moisture is below the start level and nothing blocks irrigating."
+   },
+   "NOT_NEEDED_MOISTURE_ADEQUATE": {
+    "title": "Not needed: moisture adequate",
+    "why": "Soil moisture is between the start level and the target."
+   }
+  },
+  "limitsNote": "Thresholds are demonstration values, not agronomic advice."
+ },
+ "unavail": {
+  "title": "Not available in this demo",
+  "hist": "District-level crop area and yield records (for example from BBS or DAE) are not loaded in this demo, so we show no history rather than invent it. Below is what NASA data can add: how much heat each crop season accumulated.",
+  "forecast": "A yield forecast needs district yield records and a model checked against held-back years. We have neither yet, so we show no number. The planting-window page is the supported tool for now.",
+  "next": "What would unlock this: district crop statistics for at least 15 seasons, then a baseline that any model must beat.",
+  "gddTitle": "Season heat accumulation (growing degree days)",
+  "go": "Open planting window"
+ },
+ "about": {
+  "title": "Method and data",
+  "lead": "Everything here comes from open data. This page says what was used, what was done to it, and where it can mislead.",
+  "data": "Data",
+  "d1": "Weather: NASA POWER daily record (agroclimatology community), 1 January 1981 to {to}. POWER starts in 1981, so earlier years do not exist in this source.",
+  "d2": "Boundaries: geoBoundaries (CC BY 4.0) via the bangladesh-geojson package, merged to 64 districts.",
+  "d3": "Each district uses the nearest NASA grid cell (about 50 km). 64 districts share 45 cells.",
+  "d4": "Freshness: the code repository includes a daily job that asks NASA POWER (no key needed) only for the newest days, re-runs the analysis and rebuilds the site. The newest days are provisional and NASA may revise them, so the job re-requests the last 120 days each time. Each district page also asks NASA directly for the last 30 days when you open it.",
+  "method": "Method",
+  "m1": "Rain timing: the day by which a set share of March–September rain has fallen, compared between {a1}–{a2} and {b1}–{b2} with a rank test. The two periods are the 14 latest complete years and the 14 before them, so they move forward each year.",
+  "m2": "A shift is reported only when p is below 0.10, the shift is at least 2 days, and the direction holds for a longer {la1}–{la2} vs {lb1}–{lb2} comparison and for stricter and looser settings.",
+  "m3": "Temperature trends use 1998 onward only (Sen slope with Kendall test).",
+  "limits": "Limits",
+  "l1": "POWER weather is a reanalysis model (MERRA-2), not station observation. Values can differ from your field.",
+  "l2": "We measured step changes in the model around 1997/98 and 2016. Across 45 cells, yearly rain after 1998 is about {r1} times the level before, and after 2016 about {r2} times. Temperature falls by about {t1} °C at the first step. The cause is not confirmed, so long trends in rain and soil wetness are not drawn.",
+  "l3": "With 64 districts, some flags appear by chance. See the planting-window page.",
+  "l4": "No ML forecasting is included. It would need district crop data and validation we do not have.",
+  "open": "Open source",
+  "o1": "Code under Apache-2.0. AI assistance is disclosed in docs/AI_USE.md. Built by team FARMONAUTS."
+ },
+ "meta": {
+  "description": "Pick a district in Bangladesh and see what NASA climate data says about rain timing, heat and planting windows. Demo build."
+ },
+ "chat": {
+  "open": "Ask a farming question",
+  "title": "Farm helper",
+  "sub": "Answers to 20 common crop questions. Rule-based, no AI.",
+  "placeholder": "Type a question, e.g. wheat sowing",
+  "send": "Ask",
+  "suggest": "Common questions",
+  "none": "I don't have an answer for that yet. Try one of these:",
+  "district": "What does NASA data say for {district}?",
+  "rainLine": "Rain in the last 30 days: {a} mm (typical for these dates: {b} mm).",
+  "close": "Close",
+  "disclaimer": "General guidance, not a prescription. Varieties and doses differ by area: ask your Upazila Agriculture Office or call the Krishi Call Centre on 16123.",
+  "related": "Related"
+ },
+ "iot": {
+  "title": "IoT irrigation demo",
+  "lead": "This shows the system we plan to build. Sensor readings, the radio link and the pump are simulated; the NASA rain signal is the real analysis for this district.",
+  "concept": "Concept demo. No hardware, radio or SMS is connected yet.",
+  "start": "Start demo",
+  "pause": "Pause",
+  "reset": "Restart",
+  "hour": "Simulated hour {h}",
+  "feed": "Live message feed",
+  "how": "How the real system would work",
+  "steps": {
+   "1": "Field sensors measure soil moisture, water-tank level and rain every few minutes.",
+   "2": "A low-power radio gateway (LoRa) collects the readings and sends them to the control centre over the mobile network (MQTT).",
+   "3": "The control centre adds the NASA POWER analysis for the district. If the last 30 days had less than half the usual rain, it starts irrigating earlier (start level raised by 5 points).",
+   "4": "If irrigation is needed and nothing blocks it (sensor fault, low tank, daily limit, rain expected), the centre sends a PUMP ON signal to the pump controller, and PUMP OFF when the target moisture is reached.",
+   "5": "The farmer gets an SMS at every start and stop and can override from a phone."
+  },
+  "node": {
+   "sensor": "Field sensors",
+   "gateway": "Radio gateway",
+   "control": "Control centre",
+   "pump": "Pump and valve",
+   "farmer": "Farmer's phone"
+  },
+  "soil": "Soil moisture",
+  "tank": "Water tank",
+  "rain": "Rain expected (24 h)",
+  "pump": "Pump",
+  "on": "Running",
+  "off": "Stopped",
+  "target": "Target",
+  "nasaDry": "NASA signal: last 30 days {a} mm against a usual {b} mm. Dry, so irrigation starts at {x}% instead of {y}%.",
+  "nasaOk": "NASA signal: last 30 days {a} mm against a usual {b} mm. No dry signal, so the standard start level of {x}% is used.",
+  "ev": {
+   "rainFc": "Weather feed: {mm} mm of rain expected in the next 24 hours",
+   "reading": "sensor/soil {m}% · tank {t}% · rain forecast {rain} mm",
+   "on": "Control centre → pump: PUMP ON (automatic)",
+   "off": "Control centre → pump: PUMP OFF",
+   "smsOn": "SMS to farmer: Irrigation started, soil moisture {m}%",
+   "smsOff": "SMS to farmer: Irrigation stopped",
+   "refill": "Control centre: tank low, refill request sent",
+   "refilled": "Tank refilled to 90%",
+   "newDay": "New day: pump runtime counter reset"
+  },
+  "manual": "Manual test",
+  "manualLead": "Set the readings yourself and see what the controller decides.",
+  "startLevel": "Start level"
+ }
+}

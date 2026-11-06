@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages (optional, manual)
+# Manual only. The live site is refreshed and published daily by refresh.yml. Run this by hand if you also want a GitHub Pages copy
+# (Settings > Pages > Source must be GitHub Actions).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Set base path (empty for a <user>.github.io repo, /<repo> otherwise)
+        run: |
+          name="${{ github.event.repository.name }}"
+          if [[ "$name" == *.github.io ]]; then echo "NEXT_PUBLIC_BASE_PATH=" >> "$GITHUB_ENV"; else echo "NEXT_PUBLIC_BASE_PATH=/$name" >> "$GITHUB_ENV"; fi
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
